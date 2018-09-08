@@ -45,20 +45,16 @@ public class SongAdapter extends ArrayAdapter<Song> {
         artistName.setText(currentSong.getArtistName());
         songTime.setText(currentSong.getSongTime());
 
-        songTitle.setTag(position);
+        listItemView.setTag(position);
         // Attach the click event handler
-        songTitle.setOnClickListener(new View.OnClickListener() {
+        listItemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int position = (Integer) view.getTag();
-                Intent i = new Intent(view.getContext(), NowPlaying.class);
-                for (int index = 0; index < 16; index++) {
-                    if (position == index) {
-                        i.putExtra("ArtistName", currentSong.getArtistName());
-                        i.putExtra("SongTitle", currentSong.getSongTitle());
-                        i.putExtra("SongTime", currentSong.getSongTime());
-                    }
-                }
+                Intent i = new Intent(getContext(), NowPlaying.class);
+                i.putExtra("artistName", currentSong.getArtistName());
+                i.putExtra("songTitle", currentSong.getSongTitle());
+                i.putExtra("SongTime", currentSong.getSongTime());
+                getContext();
             }
         });
         // ... other view population as needed...

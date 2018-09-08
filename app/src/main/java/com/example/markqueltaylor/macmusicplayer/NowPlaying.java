@@ -24,7 +24,7 @@ public class NowPlaying extends AppCompatActivity {
         if(bundle != null){
             Log.v("NowPlaying", "Item Clicked!!!!!!!!!!!!!!!!!!");
             artistName.setText(bundle.getString("artistName"));
-            songTitle.setText(bundle.getString("SongTitle"));
+            songTitle.setText(bundle.getString("songTitle"));
         }
 
     }
