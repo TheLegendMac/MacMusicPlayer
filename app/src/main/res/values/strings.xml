@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Mac Music Player</string>
+    <string name="now_playing_string">Now Playing</string>
+
+    <string-array name="artist_names">
+        <item>Mac Demarco</item>
+        <item>Nirvana</item>
+        <item>Lil Yachty</item>
+    </string-array>
+</resources>
