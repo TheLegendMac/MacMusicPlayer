@@ -14,7 +14,7 @@ public class MusicSelection extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_music_selection);
 
-        //Declaring array for the english words
+        //Declaring array for the Music
         ArrayList<Song> songs = new ArrayList<Song>();
 
         //Initializing the elements of the array
@@ -25,15 +25,7 @@ public class MusicSelection extends AppCompatActivity {
         songs.add(new Song("Baby's Wearing Blue Jeans", "Mac DeMarco", "4:98"));
         songs.add(new Song("European Vegas", "Mac DeMarco", "4:98"));
         songs.add(new Song("I'm A Man", "Mac DeMarco", "4:98"));
-        songs.add(new Song("Moving Like Mike", "Mac DeMarco", "4:98"));
-        songs.add(new Song("My kind of Women", "Mac DeMarco", "4:98"));
-        songs.add(new Song("This Old Dog", "Mac DeMarco", "4:98"));
-        songs.add(new Song("Chamber of Reflection", "Mac DeMarco", "4:98"));
-        songs.add(new Song("Rock and Roll Night Club", "Mac DeMarco", "4:98"));
-        songs.add(new Song("Baby's Wearing Blue Jeans", "Mac DeMarco", "4:98"));
-        songs.add(new Song("European Vegas", "Mac DeMarco", "4:98"));
-        songs.add(new Song("I'm A Man", "Mac DeMarco", "4:98"));
-        songs.add(new Song("Moving Like Mike", "Mac DeMarco", "4:98"));
+        songs.add(new Song("Moving Like Mike", "Mac DeMarco", "4:44"));
         //Logging statements to verbose Logcat
         Log.i("MusicSelectionActivity", "Song ArrayList created with a total of " + songs.size() + " songs");
 

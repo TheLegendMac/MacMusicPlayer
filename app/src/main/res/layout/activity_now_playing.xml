@@ -41,4 +41,28 @@
         android:text="Mac Demarco"
         android:textColor="@color/songTitleColor"
         android:textSize="18dp" />
+    <TextView
+        android:id="@+id/songTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/artistName"
+        android:text="Time"
+        android:gravity="center"
+        android:textColor="@color/artistNameColor"/>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"/>
+
+    <ImageButton
+        android:id="@+id/playbackButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="45dp"
+        android:adjustViewBounds="false"
+        android:background="@android:color/transparent"
+        app:srcCompat="@android:drawable/ic_media_play" />
+
 </LinearLayout>

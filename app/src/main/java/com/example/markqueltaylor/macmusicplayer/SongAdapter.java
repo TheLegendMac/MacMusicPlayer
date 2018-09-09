@@ -53,8 +53,8 @@ public class SongAdapter extends ArrayAdapter<Song> {
                 Intent i = new Intent(getContext(), NowPlaying.class);
                 i.putExtra("artistName", currentSong.getArtistName());
                 i.putExtra("songTitle", currentSong.getSongTitle());
-                i.putExtra("SongTime", currentSong.getSongTime());
-                getContext();
+                i.putExtra("songTime", currentSong.getSongTime());
+                getContext().startActivity(i);
             }
         });
         // ... other view population as needed...
