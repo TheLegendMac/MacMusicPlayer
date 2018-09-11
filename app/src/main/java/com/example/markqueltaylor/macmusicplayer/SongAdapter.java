@@ -12,8 +12,12 @@ import java.util.ArrayList;
 
 public class SongAdapter extends ArrayAdapter<Song> {
 
+    static class ViewHolder {
+        TextView songTitle, artistName, songTime;
+    }
 
-    public SongAdapter(Context context, int list_song, ArrayList<Song> songs) {
+
+    public SongAdapter(Context context, ArrayList<Song> songs) {
         super(context, 0, songs);
 
     }
@@ -26,24 +30,24 @@ public class SongAdapter extends ArrayAdapter<Song> {
         View listItemView = convertView;
 
         // Checking if the existing view is being reused, otherwise inflate the view
-        if (listItemView == null) {
+        if (null == listItemView) {
             listItemView = LayoutInflater.from(getContext()).inflate(R.layout.list_song, parent, false);
         }
 
         // Getting the current meaning in the list
         final Song currentSong = getItem(position);
 
-
         // Find the TextView in the list_item
-        TextView songTitle = listItemView.findViewById(R.id.songTitle);
-        TextView artistName = listItemView.findViewById(R.id.artistName);
-        TextView songTime = listItemView.findViewById(R.id.songTime);
+        ViewHolder holder = new ViewHolder();
+        holder.songTitle = listItemView.findViewById(R.id.songTitle);
+        holder.artistName = listItemView.findViewById(R.id.artistName);
+        holder.songTime = listItemView.findViewById(R.id.songTime);
 
 
         //Setting the song details in music selection
-        songTitle.setText(currentSong.getSongTitle());
-        artistName.setText(currentSong.getArtistName());
-        songTime.setText(currentSong.getSongTime());
+        holder.songTitle.setText(currentSong.getSongTitle());
+        holder.artistName.setText(currentSong.getArtistName());
+        holder.songTime.setText(currentSong.getSongTime());
 
         listItemView.setTag(position);
         // Attach the click event handler

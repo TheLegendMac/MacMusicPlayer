@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#202124</color>
     <color name="colorPrimaryDark">#202124</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#2F3153</color>
     <color name="bgColor">#202124</color>
     <color name="artistNameColor">#F1F3F4</color>
     <color name="songTitleColor">#D4D6D9</color>

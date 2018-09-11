@@ -21,10 +21,10 @@ public class NowPlaying extends AppCompatActivity {
         setContentView(R.layout.activity_now_playing);
 
 
-        final TextView artistName = findViewById(R.id.artistName);
-        final TextView songTitle = findViewById(R.id.songTitle);
-        final TextView songTime = findViewById(R.id.songTime);
-        final ImageButton playbackButton = findViewById(R.id.playbackButton);
+        TextView artistName = findViewById(R.id.artistName);
+        TextView songTitle = findViewById(R.id.songTitle);
+        TextView songTime = findViewById(R.id.songTime);
+        ImageButton playbackButton = findViewById(R.id.playbackButton);
 
 
         Bundle bundle = getIntent().getExtras();
@@ -62,6 +62,5 @@ public class NowPlaying extends AppCompatActivity {
 
             }
         });
-
     }
 }

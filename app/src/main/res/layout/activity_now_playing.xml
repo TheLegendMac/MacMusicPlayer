@@ -14,12 +14,11 @@
         android:layout_marginLeft="45dp"
         android:layout_marginRight="45dp"
         android:layout_weight="70"
-        android:scaleType="fitCenter"
         app:srcCompat="@drawable/mac_demarco_album_art" />
 
     <TextView
         android:id="@+id/songTitle"
-        android:layout_width="380dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
         android:layout_marginLeft="15dp"
@@ -27,7 +26,7 @@
         android:gravity="center"
         android:text="My Kind of Women"
         android:textColor="@color/artistNameColor"
-        android:textSize="24dp" />
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/artistName"
@@ -40,21 +39,23 @@
         android:gravity="center"
         android:text="Mac Demarco"
         android:textColor="@color/songTitleColor"
-        android:textSize="18dp" />
+        android:textSize="18sp" />
+
     <TextView
         android:id="@+id/songTime"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/artistName"
-        android:text="Time"
         android:gravity="center"
-        android:textColor="@color/artistNameColor"/>
+        android:text="@string/songTxt"
+        android:textColor="@color/artistNameColor" />
+
     <ProgressBar
         android:id="@+id/progressBar"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="15dp"/>
+        android:layout_margin="15dp" />
 
     <ImageButton
         android:id="@+id/playbackButton"
