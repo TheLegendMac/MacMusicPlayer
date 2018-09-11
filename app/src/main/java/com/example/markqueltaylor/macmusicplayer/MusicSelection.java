@@ -29,7 +29,7 @@ public class MusicSelection extends AppCompatActivity {
         //Logging statements to verbose Logcat
         Log.i("MusicSelectionActivity", "Song ArrayList created with a total of " + songs.size() + " songs");
 
-        SongAdapter adapter = new SongAdapter(this, R.layout.list_song, songs);
+        SongAdapter adapter = new SongAdapter(this, songs);
 
 
         final ListView listView = findViewById(R.id.rootView);
