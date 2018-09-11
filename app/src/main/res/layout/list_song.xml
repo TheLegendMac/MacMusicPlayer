@@ -15,8 +15,8 @@
         android:layout_marginRight="15dp"
         android:layout_marginTop="5dp"
         android:textColor="@color/artistNameColor"
-        android:textSize="24dp"
-        tools:text="My Kind of Women"/>
+        android:textSize="24sp"
+        tools:text="@string/songTitle"/>
 
     <TextView
         android:id="@+id/artistName"
@@ -26,8 +26,8 @@
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:textColor="@color/songTitleColor"
-        android:textSize="18dp"
-        tools:text="Mac Demarco" />
+        android:textSize="18sp"
+        tools:text="@string/artistName" />
 
     <TextView
         android:id="@+id/songTime"
@@ -36,6 +36,6 @@
         android:layout_alignParentRight="true"
         android:layout_marginRight="15dp"
         android:layout_marginTop="5dp"
-        android:text="3:49"
+        android:text="@string/songTime"
         android:textColor="@color/artistNameColor"/>
 </RelativeLayout>

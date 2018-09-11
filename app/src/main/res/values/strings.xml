@@ -3,4 +3,7 @@
     <string name="now_playing_string">Now Playing</string>
     <string name="songTxt">Time</string>
     <string name="backTxt">Back</string>
+    <string name="artistName">Mac Demarco</string>
+    <string name="songTitle">My Kind of Women</string>
+    <string name="songTime">3:49</string>
 </resources>

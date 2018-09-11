@@ -7,7 +7,7 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class MusicSelection extends AppCompatActivity {
+public class MusicSelectionActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,7 +15,7 @@ public class MusicSelection extends AppCompatActivity {
         setContentView(R.layout.activity_music_selection);
 
         //Declaring array for the Music
-        ArrayList<Song> songs = new ArrayList<Song>();
+        ArrayList<Song> songs = new ArrayList<>();
 
         //Initializing the elements of the array
         songs.add(new Song("My kind of Women", "Mac DeMarco", "4:98"));
